@@ -1,0 +1,8 @@
+uniprot_id: ''
+halflife: 1593.6956414259646
+unit: s
+species: Saccharomyces cerevisiae S288C
+ncbi_taxonomy_id: 559292
+reference:
+- namespace: doi
+  value: 10.1016/j.cell.2013.12.026
