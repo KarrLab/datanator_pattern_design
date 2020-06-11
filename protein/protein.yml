@@ -13,9 +13,13 @@ entrez_id: '7810631'
 status: reviewed
 ncbi_taxonomy_id: 419942
 ko_number: K07558
-gene_name_alt: 
-gene_name_orf: 
-gene_name_oln: YN1551_1673
+add_id: #addtional ID
+  - namespace: 'gene_name_alt'
+    value: null
+  - namespace: 'gene_name_orf'
+    value: null 
+  - namespace: 'gene_name_oln'
+    value: 'YN1551_1673'
 species_name: Sulfolobus islandicus Y.N.15.51
 ko_name:
 - tRNA nucleotidyltransferase (CCA-adding enzyme)
@@ -23,3 +27,6 @@ canon_ancestor_name:
 - cellular organisms
 canon_ancestor_taxon_id:
 - 131567
+abundance: # abundance as array because rarely searched for 
+  - organ:
+    abundance: 
