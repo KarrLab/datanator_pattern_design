@@ -6,3 +6,4 @@ ncbi_taxonomy_id: 559292
 reference:
 - namespace: doi
   value: 10.1016/j.cell.2013.12.026
+cell_line: ""
