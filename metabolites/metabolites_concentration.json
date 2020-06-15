@@ -1,0 +1,446 @@
+{
+    "metabolite": "Glycine",
+    "chebi_id": "15428",
+    "concentrations": [
+        {
+            "affinities": [
+                {
+                    "ec_number": "1.4.3.3",
+                    "k_m": 0.158745078663875,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "2.1.1.20",
+                    "k_m": 0.0000122,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "2.1.4.1",
+                    "k_m": 0.0025,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "2.3.1.13",
+                    "k_m": 0.0064,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "2.3.1.65",
+                    "k_m": 0.004,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "2.3.1.71",
+                    "k_m": 0.0064,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "2.6.1.44",
+                    "k_m": 0.022,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "6.3.2.3",
+                    "k_m": 0.00076622899207481,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "2.3.2.2",
+                    "k_m": 0.0023,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "5.1.1.18",
+                    "k_m": 0.00164,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "1.4.3.3",
+                    "k_m": 0.158745078663875,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "2.1.1.20",
+                    "k_m": 0.0000122,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "2.1.4.1",
+                    "k_m": 0.0025,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "2.3.1.13",
+                    "k_m": 0.0064,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "2.3.1.65",
+                    "k_m": 0.004,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "2.3.1.71",
+                    "k_m": 0.0064,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "2.6.1.44",
+                    "k_m": 0.022,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "6.3.2.3",
+                    "k_m": 0.00076622899207481,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "2.3.2.2",
+                    "k_m": 0.0023,
+                    "k_i": null,
+                    "unit": "M"
+                },
+                {
+                    "ec_number": "5.1.1.18",
+                    "k_m": 0.00164,
+                    "k_i": null,
+                    "unit": "M"
+                }
+            ],
+            "concentration": 0.00371310480679065,
+            "species_name": "Homo sapiens",
+            "ncbi_taxonomy_id": 9606,
+            "last_modified": {
+                "$date": "2020-05-20T23:02:02.710Z"
+            },
+            "reference": {
+                "namespace": "doi",
+                "id": "10.1038/nchembio.2077"
+            },
+            "unit": "M"
+        },
+        {
+            "ncbi_taxonomy_id": 562,
+            "species_name": "Escherichia coli",
+            "growth_media": "48 mM Na2HPO4, 22 mM KH2PO4, 10 mM NaCl, 45 mM (NH4)2SO4, supplemented with 1 mM MgSO4, 1 mg/l thiamine·HCl, 5.6 mg/l CaCl2, 8 mg/l FeCl3, 1 mg/l MnCl2·4H2O, 1.7 mg/l ZnCl2, 0.43 mg/l CuCl2·2H2O, 0.6 mg/l CoCl2·2H2O and 0.6 mg/l Na2MoO4·2H2O.  4 g/L Gluco",
+            "growth_system": "Bioreactor, pH controlled, O2 and CO2 controlled, dilution rate: 0.2/h",
+            "concentration": "318.0",
+            "concentration_units": "uM",
+            "internal": null,
+            "error": "0.0",
+            "temperature": "37 oC",
+            "strain": "BW25113",
+            "growth_status": "Stationary Phase, glucose limited",
+            "molecules": "1272000",
+            "molecules_error": "0",
+            "reference": {
+                "namespace": "pubmed",
+                "id": "17379776",
+                "text": "Ishii, N., Nakahigashi, K., Baba, T., Robert, M., Soga, T., Kanai, A., Hirasawa, T., Naba, M., Hirai, K., Hoque, A., Ho, P. Y., Kakazu, Y., Sugawara, K., Igarashi, S., Harada, S., Masuda, T., Sugiyama, N., Togashi, T., Hasegawa, M., Takai, Y., Yugi, K., Arakawa, K., Iwata, N., Toya, Y., Nakayama, Y., Nishioka, T., Shimizu, K., Mori, H., Tomita, M. (2007). \"Multiple high-throughput analyses monitor the response of E. coli to perturbations.\" Science 316:593-597."
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 562,
+            "species_name": "Escherichia coli",
+            "growth_media": "Luria-Bertani (LB) media",
+            "growth_system": "Shake flask",
+            "concentration": "235.33",
+            "concentration_units": "uM",
+            "internal": "true",
+            "error": "14.15",
+            "temperature": "37 oC",
+            "strain": "BL21 DE3",
+            "growth_status": "Stationary phase cultures (overnight culture)",
+            "molecules": "941333",
+            "molecules_error": "56616",
+            "reference": {
+                "namespace": "pubmed",
+                "id": "17535911",
+                "text": "Lin, Z., Johnson, L. C., Weissbach, H., Brot, N., Lively, M. O., Lowther, W. T. (2007). \"Free methionine-(R)-sulfoxide reductase from Escherichia coli reveals a new GAF domain function.\" Proc Natl Acad Sci U S A 104:9597-9602."
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 4932,
+            "species_name": "Saccharomyces cerevisiae",
+            "growth_media": "YPD media",
+            "concentration": "3279.23077",
+            "concentration_units": "&#181;M",
+            "internal": "false",
+            "error": "65.4359",
+            "strain": null,
+            "reference": {
+                "namespace": "pubmed",
+                "id": "7654310",
+                "text": "Martinez-Force, E., Benitez, T. (1995). \"Effects of varying media, temperature, and growth rates on the intracellular concentrations of yeast amino acids.\" Biotechnol Prog 11:386-392."
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 4932,
+            "species_name": "Saccharomyces cerevisiae",
+            "growth_media": "YPG media",
+            "concentration": "1093.07692",
+            "concentration_units": "&#181;M",
+            "internal": "false",
+            "error": "21.71282",
+            "strain": null,
+            "reference": {
+                "namespace": "pubmed",
+                "id": "7654310",
+                "text": "Martinez-Force, E., Benitez, T. (1995). \"Effects of varying media, temperature, and growth rates on the intracellular concentrations of yeast amino acids.\" Biotechnol Prog 11:386-392."
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 4932,
+            "species_name": "Saccharomyces cerevisiae",
+            "growth_media": "SD media",
+            "concentration": "2869.3641",
+            "concentration_units": "&#181;M",
+            "internal": "false",
+            "error": "57.40513",
+            "strain": null,
+            "reference": {
+                "namespace": "pubmed",
+                "id": "7654310",
+                "text": "Martinez-Force, E., Benitez, T. (1995). \"Effects of varying media, temperature, and growth rates on the intracellular concentrations of yeast amino acids.\" Biotechnol Prog 11:386-392."
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 4932,
+            "species_name": "Saccharomyces cerevisiae",
+            "growth_media": "SG media",
+            "concentration": "1366.42051",
+            "concentration_units": "&#181;M",
+            "internal": "false",
+            "error": "27.3641",
+            "strain": null,
+            "reference": {
+                "namespace": "pubmed",
+                "id": "7654310",
+                "text": "Martinez-Force, E., Benitez, T. (1995). \"Effects of varying media, temperature, and growth rates on the intracellular concentrations of yeast amino acids.\" Biotechnol Prog 11:386-392."
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 4932,
+            "species_name": "Saccharomyces cerevisiae",
+            "growth_media": "M (molasses)",
+            "concentration": "3142.41026",
+            "concentration_units": "&#181;M",
+            "internal": "false",
+            "error": "62.75897",
+            "strain": null,
+            "reference": {
+                "namespace": "pubmed",
+                "id": "7654310",
+                "text": "Martinez-Force, E., Benitez, T. (1995). \"Effects of varying media, temperature, and growth rates on the intracellular concentrations of yeast amino acids.\" Biotechnol Prog 11:386-392."
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 4932,
+            "species_name": "Saccharomyces cerevisiae",
+            "growth_media": "MA (molasses)",
+            "concentration": "7241.37436",
+            "concentration_units": "&#181;M",
+            "internal": "false",
+            "error": "144.85128",
+            "strain": null,
+            "reference": {
+                "namespace": "pubmed",
+                "id": "7654310",
+                "text": "Martinez-Force, E., Benitez, T. (1995). \"Effects of varying media, temperature, and growth rates on the intracellular concentrations of yeast amino acids.\" Biotechnol Prog 11:386-392."
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 4932,
+            "species_name": "Saccharomyces cerevisiae",
+            "growth_media": "MB (molasses)",
+            "concentration": "3005.88718",
+            "concentration_units": "&#181;M",
+            "internal": "false",
+            "error": "60.08205",
+            "strain": null,
+            "reference": {
+                "namespace": "pubmed",
+                "id": "7654310",
+                "text": "Martinez-Force, E., Benitez, T. (1995). \"Effects of varying media, temperature, and growth rates on the intracellular concentrations of yeast amino acids.\" Biotechnol Prog 11:386-392."
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 4932,
+            "species_name": "Saccharomyces cerevisiae",
+            "growth_media": "MAB (molasses)",
+            "concentration": "4782.17436",
+            "concentration_units": "&#181;M",
+            "internal": "false",
+            "error": "95.77436",
+            "strain": null,
+            "reference": {
+                "namespace": "pubmed",
+                "id": "7654310",
+                "text": "Martinez-Force, E., Benitez, T. (1995). \"Effects of varying media, temperature, and growth rates on the intracellular concentrations of yeast amino acids.\" Biotechnol Prog 11:386-392."
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 4932,
+            "species_name": "Saccharomyces cerevisiae",
+            "growth_media": "hops, malted barley",
+            "concentration": "1732.0",
+            "concentration_units": "&#181;M",
+            "internal": "false",
+            "error": "0.0",
+            "strain": null,
+            "reference": {
+                "namespace": "pubmed",
+                "id": null,
+                "text": "Alcoholic beverage, beer, regular, all - U.S. Department of Agriculture, Agricultural Research Service. 2010. USDA National Nutrient Database for Standard Reference, Release 23. <a href = http://www.ars.usda.gov/ba/bhnrc/ndl>Nutrient Data Laboratory Home Page</a>"
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 4932,
+            "species_name": "Saccharomyces cerevisiae",
+            "growth_media": "YEB media with 0.5 mM glucose",
+            "concentration": "1291.0",
+            "concentration_units": "&#181;M",
+            "internal": "true",
+            "error": "65.0",
+            "strain": null,
+            "reference": {
+                "id": "YMDB00016",
+                "namespace": "ymdb"
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 4932,
+            "species_name": "Saccharomyces cerevisiae",
+            "growth_media": "Synthetic medium with 20 g/L glucose",
+            "concentration": "780.0",
+            "concentration_units": "&#181;M",
+            "internal": "false",
+            "error": "287.0",
+            "strain": null,
+            "reference": {
+                "namespace": "pubmed",
+                "id": "12584756",
+                "text": "Hans, M. A., Heinzle, E., Wittmann, C. (2003). \"Free intracellular amino acid pools during autonomous oscillations in Saccharomyces cerevisiae.\" Biotechnol Bioeng 82:143-151."
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 4932,
+            "species_name": "Saccharomyces cerevisiae",
+            "growth_media": "Minimal medium supplemented with glucose",
+            "concentration": "15000.0",
+            "concentration_units": "&#181;M",
+            "internal": "false",
+            "error": "0.0",
+            "strain": null,
+            "reference": {
+                "namespace": "pubmed",
+                "id": "4578278",
+                "text": "Gancedo, J. M., Gancedo, C. (1973). \"Concentrations of intermediary metabolites in yeast.\" Biochimie 55:205-211."
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 4932,
+            "species_name": "Saccharomyces cerevisiae",
+            "growth_media": "Minimal medium  supplemented with ammonium and glucose",
+            "concentration": "15000.0",
+            "concentration_units": "&#181;M",
+            "internal": "false",
+            "error": "0.0",
+            "strain": null,
+            "reference": {
+                "namespace": "pubmed",
+                "id": "4578278",
+                "text": "Gancedo, J. M., Gancedo, C. (1973). \"Concentrations of intermediary metabolites in yeast.\" Biochimie 55:205-211."
+            }
+        },
+        {
+            "ncbi_taxonomy_id": 4932,
+            "species_name": "Saccharomyces cerevisiae",
+            "growth_media": "Glucose limited aerobic culture",
+            "concentration": "2.9",
+            "concentration_units": "umol/g DW",
+            "internal": null,
+            "error": "0.0",
+            "strain": null,
+            "reference": {
+                "namespace": "pubmed",
+                "id": "20490971",
+                "text": "Heijnen JJ. (2010). \"Impact of thermodynamic principles in systems biology.\" Adv Biochem Eng Biotechnol. 2010;121:139-62. doi: 10.1007/10_2009_63."
+            }
+        }
+    ],
+    "kegg_id": "C00037",
+    "synonyms": [
+        "2-Aminoacetate",
+        "2-Aminoacetic acid",
+        "Acid, aminoacetic",
+        "Aciport",
+        "amino-Acetate",
+        "amino-Acetic acid",
+        "Aminoacetate",
+        "Aminoacetic acid",
+        "Aminoessigsaeure",
+        "Aminoethanoate",
+        "Aminoethanoic acid",
+        "Calcium salt glycine",
+        "Cobalt salt glycine",
+        "Copper salt glycine",
+        "G",
+        "Glicoamin",
+        "Gly",
+        "Glycin",
+        "Glycine carbonate (1:1), monosodium salt",
+        "Glycine carbonate (2:1), monolithium salt",
+        "Glycine carbonate (2:1), monopotassium salt",
+        "Glycine carbonate (2:1), monosodium salt",
+        "Glycine hydrochloride",
+        "Glycine hydrochloride (2:1)",
+        "Glycine phosphate",
+        "Glycine phosphate (1:1)",
+        "Glycine sulfate (3:1)",
+        "Glycine, calcium salt",
+        "Glycine, calcium salt (2:1)",
+        "Glycine, cobalt salt",
+        "Glycine, copper salt",
+        "Glycine, monoammonium salt",
+        "Glycine, monopotasssium salt",
+        "Glycine, monosodium salt",
+        "Glycine, sodium hydrogen carbonate",
+        "Glycocoll",
+        "Glycolixir",
+        "Glycosthene",
+        "Glykokoll",
+        "Glyzin",
+        "Gyn-Hydralin",
+        "H2N-CH2-COOH",
+        "Hgly",
+        "Hydrochloride, glycine",
+        "Leimzucker",
+        "Monoammonium salt glycine",
+        "Monopotasssium salt glycine",
+        "Monosodium salt glycine",
+        "Padil",
+        "Phosphate, glycine",
+        "Salt glycine, monoammonium",
+        "Salt glycine, monosodium"
+    ],
+    "inchikey": "DHMQDGOQFOQNFH-UHFFFAOYSA-N"
+}

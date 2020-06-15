@@ -23,7 +23,7 @@ add_id: #addtional ID
 species_name: Sulfolobus islandicus Y.N.15.51
 ko_name:
 - tRNA nucleotidyltransferase (CCA-adding enzyme)
-canon_ancestor_name:
+canon_ancestor_name: #will be used frequently
 - cellular organisms
 canon_ancestor_taxon_id:
 - 131567
