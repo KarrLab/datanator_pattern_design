@@ -1,0 +1,5 @@
+{
+    "ncbi_taxonomy_id": 123,
+    "name": "something",
+    "canon_ancestors": {"wrong": "wrong"}
+}

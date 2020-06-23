@@ -1,0 +1,9 @@
+{
+    "bsonType": "object",
+    "type": "object",
+    "properties":{
+        "taxon": {
+            "bsonType": "object"
+        }
+    }
+}

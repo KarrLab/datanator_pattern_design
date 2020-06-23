@@ -1,0 +1,22 @@
+{
+    "bsonType": "object",
+    "type": "object",
+    "properties": {
+        "condition": {
+            "bsonType": "string",
+            "type": "string"
+        },
+        "media": {
+            "bsonType": "string",
+            "type": "string"
+        },
+        "temperature": {
+            "bsonType": "long",
+            "type": "number"
+        },
+        "pH": {
+            "bsonType": "long",
+            "type": "number"
+        }
+    }
+}
