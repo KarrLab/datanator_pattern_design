@@ -1,0 +1,25 @@
+{
+    "bsonType": "object",
+    "type": "object",
+    "properties": {
+        "type": {
+            "bsonType": "string",
+            "type": "string"
+        },
+        "substrate": {"$ref": "entity.json"},
+        "value": {
+            "oneOf": [
+                {"bsonType": "double", "type": "number"},
+                {"bsonType": "string", "type": "string"}
+            ]
+        },
+        "uncertainty": {
+            "bsonType": "double",
+            "type": "number"
+        },
+        "units": {
+            "bsonType": "string",
+            "type": "string"
+        }
+    }
+}
