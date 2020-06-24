@@ -1,0 +1,102 @@
+{
+    "bsonType": "object",
+    "type": "object",
+    "properties": {
+        "taxon": {
+            "bsonType": "object",
+            "type": "object",
+            "required": [
+                "ncbi_taxonomy_id",
+                "name"
+            ],
+            "properties": {
+                "ncbi_taxonomy_id": {
+                    "bsonType": "int",
+                    "type": "number",
+                    "description": "NCBI taxonomy ID of an organism"
+                },
+                "name": {
+                    "bsonType": "string",
+                    "type": "string",
+                    "description": "Canonical name of an organism"
+                },
+                "canon_ancestors": {
+                    "bsonType": "array",
+                    "type": "array",
+                    "description": "Canonical ancestors of an organism",
+                    "items": {
+                        "bsonType": "object",
+                        "type": "object",
+                        "description": "Individual taxon information for an ancestor",
+                        "properties": {
+                            "ncbi_taxonomy_id": {
+                                "bsonType": "int",
+                                "type": "number",
+                                "description": "NCBI taxonomy ID of an organism"
+                            },
+                            "name": {
+                                "bsonType": "string",
+                                "type": "string",
+                                "description": "Canonical name of an organism"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "variant": {
+            "bsonType": "object",
+            "type": "object",
+            "properties": {
+                "mutant": {
+                    "bsonType": "bool",
+                    "type": "boolean"
+                },
+                "description": {
+                    "bsonType": "string",
+                    "type": "string"
+                }
+            }
+        },
+        "growthPhase": {
+            "bsonType": [
+                "string",
+                "null"
+            ],
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "organ": {
+            "bsonType": [
+                "string",
+                "null"
+            ],
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "cellType": {
+            "bsonType": [
+                "string",
+                "null"
+            ],
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "cellLine": {
+            "bsonType": [
+                "string",
+                "null"
+            ],
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    }
+}

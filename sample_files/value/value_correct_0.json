@@ -1,0 +1,18 @@
+{
+    "type": "k_i",
+    "substrate": {
+        "type": "RNA",
+        "name": "something",
+        "synonyms": [],
+        "identifiers": [
+            {
+                "namespace": "something",
+                "value": "another thing"
+            }            
+        ],
+        "related": []
+    },
+    "value": "1233",
+    "uncertainty": 0.123,
+    "units": "celcius"
+}

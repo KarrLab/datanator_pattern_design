@@ -1,0 +1,340 @@
+{
+    "bsonType": "object",
+    "type": "object",
+    "properties": {
+        "entity": {
+            "bsonType": "object",
+            "type": "object",
+            "required": [
+                "type"
+            ],
+            "properties": {
+                "type": {
+                    "bsonType": "string",
+                    "type": "string",
+                    "enum": [
+                        "metabolite",
+                        "protein",
+                        "reaction",
+                        "RNA"
+                    ]
+                },
+                "name": {
+                    "bsonType": "string",
+                    "type": "string",
+                    "description": "Name of protein, RNA, etc."
+                },
+                "synonyms": {
+                    "bsonType": "array",
+                    "type": "array",
+                    "items": {
+                        "bsonType": "string",
+                        "type": "string"
+                    }
+                },
+                "identifiers": {
+                    "bsonType": "array",
+                    "type": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "type": "object",
+                        "required": [
+                            "namespace",
+                            "value"
+                        ],
+                        "properties": {
+                            "namespace": {
+                                "bsonType": "string",
+                                "type": "string",
+                                "description": "name of the identifier"
+                            },
+                            "value": {
+                                "bsonType": "string",
+                                "type": "string",
+                                "description": "id"
+                            }
+                        }
+                    }
+                },
+                "related": {
+                    "bsonType": "array",
+                    "type": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "type": "object",
+                        "required": [
+                            "namespace",
+                            "value"
+                        ],
+                        "properties": {
+                            "namespace": {
+                                "bsonType": "string",
+                                "type": "string",
+                                "description": "name of the identifier"
+                            },
+                            "value": {
+                                "bsonType": "string",
+                                "type": "string",
+                                "description": "id"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "value": {
+            "bsonType": "object",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "bsonType": "string",
+                    "type": "string"
+                },
+                "substrate": {
+                    "bsonType": "object",
+                    "type": "object",
+                    "required": [
+                        "type"
+                    ],
+                    "properties": {
+                        "type": {
+                            "bsonType": "string",
+                            "type": "string",
+                            "enum": [
+                                "metabolite",
+                                "protein",
+                                "reaction",
+                                "RNA"
+                            ]
+                        },
+                        "name": {
+                            "bsonType": "string",
+                            "type": "string",
+                            "description": "Name of protein, RNA, etc."
+                        },
+                        "synonyms": {
+                            "bsonType": "array",
+                            "type": "array",
+                            "items": {
+                                "bsonType": "string",
+                                "type": "string"
+                            }
+                        },
+                        "identifiers": {
+                            "bsonType": "array",
+                            "type": "array",
+                            "items": {
+                                "bsonType": "object",
+                                "type": "object",
+                                "required": [
+                                    "namespace",
+                                    "value"
+                                ],
+                                "properties": {
+                                    "namespace": {
+                                        "bsonType": "string",
+                                        "type": "string",
+                                        "description": "name of the identifier"
+                                    },
+                                    "value": {
+                                        "bsonType": "string",
+                                        "type": "string",
+                                        "description": "id"
+                                    }
+                                }
+                            }
+                        },
+                        "related": {
+                            "bsonType": "array",
+                            "type": "array",
+                            "items": {
+                                "bsonType": "object",
+                                "type": "object",
+                                "required": [
+                                    "namespace",
+                                    "value"
+                                ],
+                                "properties": {
+                                    "namespace": {
+                                        "bsonType": "string",
+                                        "type": "string",
+                                        "description": "name of the identifier"
+                                    },
+                                    "value": {
+                                        "bsonType": "string",
+                                        "type": "string",
+                                        "description": "id"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "value": {
+                    "oneOf": [
+                        {
+                            "bsonType": "double",
+                            "type": "number"
+                        },
+                        {
+                            "bsonType": "string",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "uncertainty": {
+                    "bsonType": "double",
+                    "type": "number"
+                },
+                "units": {
+                    "bsonType": "string",
+                    "type": "string"
+                }
+            }
+        },
+        "genotype": {
+            "bsonType": "object",
+            "type": "object",
+            "properties": {
+                "taxon": {
+                    "bsonType": "object",
+                    "type": "object",
+                    "required": [
+                        "ncbi_taxonomy_id",
+                        "name"
+                    ],
+                    "properties": {
+                        "ncbi_taxonomy_id": {
+                            "bsonType": "int",
+                            "type": "number",
+                            "description": "NCBI taxonomy ID of an organism"
+                        },
+                        "name": {
+                            "bsonType": "string",
+                            "type": "string",
+                            "description": "Canonical name of an organism"
+                        },
+                        "canon_ancestors": {
+                            "bsonType": "array",
+                            "type": "array",
+                            "description": "Canonical ancestors of an organism",
+                            "items": {
+                                "bsonType": "object",
+                                "type": "object",
+                                "description": "Individual taxon information for an ancestor",
+                                "properties": {
+                                    "ncbi_taxonomy_id": {
+                                        "bsonType": "int",
+                                        "type": "number",
+                                        "description": "NCBI taxonomy ID of an organism"
+                                    },
+                                    "name": {
+                                        "bsonType": "string",
+                                        "type": "string",
+                                        "description": "Canonical name of an organism"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "variant": {
+                    "bsonType": "object",
+                    "type": "object",
+                    "properties": {
+                        "mutant": {
+                            "bsonType": "bool",
+                            "type": "boolean"
+                        },
+                        "description": {
+                            "bsonType": "string",
+                            "type": "string"
+                        }
+                    }
+                },
+                "growthPhase": {
+                    "bsonType": [
+                        "string",
+                        "null"
+                    ],
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "organ": {
+                    "bsonType": [
+                        "string",
+                        "null"
+                    ],
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "cellType": {
+                    "bsonType": [
+                        "string",
+                        "null"
+                    ],
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "cellLine": {
+                    "bsonType": [
+                        "string",
+                        "null"
+                    ],
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "environment": {
+            "bsonType": "object",
+            "type": "object",
+            "properties": {
+                "condition": {
+                    "bsonType": "string",
+                    "type": "string"
+                },
+                "media": {
+                    "bsonType": "string",
+                    "type": "string"
+                },
+                "temperature": {
+                    "bsonType": "long",
+                    "type": "number"
+                },
+                "pH": {
+                    "bsonType": "long",
+                    "type": "number"
+                }
+            }
+        },
+        "source": {
+            "bsonType": "object",
+            "type": "object",
+            "required": [
+                "namespace",
+                "value"
+            ],
+            "properties": {
+                "namespace": {
+                    "bsonType": "string",
+                    "type": "string",
+                    "description": "name of the identifier"
+                },
+                "value": {
+                    "bsonType": "string",
+                    "type": "string",
+                    "description": "id"
+                }
+            }
+        }
+    }
+}

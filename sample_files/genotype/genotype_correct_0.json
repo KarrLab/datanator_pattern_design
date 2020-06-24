@@ -1,0 +1,11 @@
+{
+    "taxon": {
+        "ncbi_taxonomy_id": 123,
+        "name": "something"
+    },
+    "variant": {
+        "mutant": true
+    },
+    "growthPhase": null,
+    "organ": "pancreas"
+}

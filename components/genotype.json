@@ -20,20 +20,20 @@
             }
         },
         "growthPhase": {
-            "bsonType":["string", null],
-            "type": ["string", null]
+            "bsonType":["string", "null"],
+            "type": ["string", "null"]
         },
         "organ": {
-            "bsonType": ["string", null],
-            "type": ["string", null]
+            "bsonType": ["string", "null"],
+            "type": ["string", "null"]
         },
         "cellType": {
-            "bsonType": ["string", null],
-            "type": ["string", null]
+            "bsonType": ["string", "null"],
+            "type": ["string", "null"]
         },
         "cellLine": {
-            "bsonType": ["string", null],
-            "type": ["string", null]
+            "bsonType": ["string", "null"],
+            "type": ["string", "null"]
         }
     }
 }
