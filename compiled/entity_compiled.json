@@ -1,0 +1,80 @@
+{
+    "bsonType": "object",
+    "type": "object",
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "bsonType": "string",
+            "type": "string",
+            "enum": [
+                "metabolite",
+                "protein",
+                "reaction",
+                "RNA"
+            ]
+        },
+        "name": {
+            "bsonType": "string",
+            "type": "string",
+            "description": "Name of protein, RNA, etc."
+        },
+        "synonyms": {
+            "bsonType": "array",
+            "type": "array",
+            "items": {
+                "bsonType": "string",
+                "type": "string"
+            }
+        },
+        "identifiers": {
+            "bsonType": "array",
+            "type": "array",
+            "items": {
+                "bsonType": "object",
+                "type": "object",
+                "required": [
+                    "namespace",
+                    "value"
+                ],
+                "properties": {
+                    "namespace": {
+                        "bsonType": "string",
+                        "type": "string",
+                        "description": "name of the identifier"
+                    },
+                    "value": {
+                        "bsonType": "string",
+                        "type": "string",
+                        "description": "id"
+                    }
+                }
+            }
+        },
+        "related": {
+            "bsonType": "array",
+            "type": "array",
+            "items": {
+                "bsonType": "object",
+                "type": "object",
+                "required": [
+                    "namespace",
+                    "value"
+                ],
+                "properties": {
+                    "namespace": {
+                        "bsonType": "string",
+                        "type": "string",
+                        "description": "name of the identifier"
+                    },
+                    "value": {
+                        "bsonType": "string",
+                        "type": "string",
+                        "description": "id"
+                    }
+                }
+            }
+        }
+    }
+}

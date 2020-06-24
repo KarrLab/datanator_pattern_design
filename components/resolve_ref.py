@@ -2,7 +2,6 @@
 Derived from https://jsonldschema.readthedocs.io/en/latest/_modules/compile_schema.html
 """
 import json
-from copy import deepcopy as copy
 from collections import OrderedDict
 
 
@@ -109,5 +108,11 @@ class SchemaKey:
 
 
 def main():
-    url = "./entity.json"
-    resolved = resolve_reference(url)
+    url = "entity.json"
+    schema = resolve_reference(url)
+    resolved = resolve_schema_references(schema, {})
+    with open("../compiled/{}_compiled.json".format(url.split(".")[0]), "w+") as f:
+        json.dump(resolved, f)
+
+if __name__ == "__main__":
+    main()
