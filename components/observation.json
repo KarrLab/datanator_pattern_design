@@ -1,0 +1,11 @@
+{
+    "bsonType": "object",
+    "type": "object",
+    "properties": {
+        "entity": {"$ref": "entity.json"},
+        "value": {"$ref": "value.json"},
+        "genotype": {"$ref": "genotype.json"},
+        "environment": {"$ref": "environment.json"},
+        "source": {"$ref": "identifier.json"}
+    }
+}
