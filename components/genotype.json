@@ -3,7 +3,37 @@
     "type": "object",
     "properties":{
         "taxon": {
-            "bsonType": "object"
+            "$ref": "taxon.json#"
+        },
+        "variant": {
+            "bsonType": "object",
+            "type": "object",
+            "properties": {
+                "mutant": {
+                    "bsonType": "bool",
+                    "type": "boolean"
+                },
+                "description": {
+                    "bsonType": "string",
+                    "type": "string"
+                }
+            }
+        },
+        "growthPhase": {
+            "bsonType":["string", null],
+            "type": ["string", null]
+        },
+        "organ": {
+            "bsonType": ["string", null],
+            "type": ["string", null]
+        },
+        "cellType": {
+            "bsonType": ["string", null],
+            "type": ["string", null]
+        },
+        "cellLine": {
+            "bsonType": ["string", null],
+            "type": ["string", null]
         }
     }
 }
