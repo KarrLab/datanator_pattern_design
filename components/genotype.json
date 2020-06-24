@@ -3,7 +3,7 @@
     "type": "object",
     "properties":{
         "taxon": {
-            "$ref": "taxon.json#"
+            "$ref": "taxon.json"
         },
         "variant": {
             "bsonType": "object",
