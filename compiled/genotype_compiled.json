@@ -7,7 +7,8 @@
             "type": "object",
             "required": [
                 "ncbi_taxonomy_id",
-                "name"
+                "name",
+                "canon_ancestors"
             ],
             "properties": {
                 "ncbi_taxonomy_id": {

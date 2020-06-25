@@ -1,6 +1,11 @@
 {
     "bsonType": "object",
     "type": "object",
+    "required": [
+        "entity",
+        "source",
+        "schema_version"
+    ],
     "properties": {
         "entity": {
             "bsonType": "object",
@@ -201,7 +206,8 @@
                     "type": "object",
                     "required": [
                         "ncbi_taxonomy_id",
-                        "name"
+                        "name",
+                        "canon_ancestors"
                     ],
                     "properties": {
                         "ncbi_taxonomy_id": {
@@ -335,6 +341,10 @@
                     "description": "id"
                 }
             }
+        },
+        "schema_version": {
+            "bsonType": "string",
+            "type": "string"
         }
     }
 }

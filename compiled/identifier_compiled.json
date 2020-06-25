@@ -1,7 +1,10 @@
 {
     "bsonType": "object",
     "type": "object",
-    "required": ["namespace", "value"],
+    "required": [
+        "namespace",
+        "value"
+    ],
     "properties": {
         "namespace": {
             "bsonType": "string",
