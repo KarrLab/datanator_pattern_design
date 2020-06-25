@@ -1,23 +1,14 @@
 {
     "bsonType": "object",
-    "type": "object",
     "properties": {
         "format": {
             "bsonType": [
-                "string",
-                "null"
-            ],
-            "type": [
                 "string",
                 "null"
             ]
         },
         "value": {
             "bsonType": [
-                "string",
-                "null"
-            ],
-            "type": [
                 "string",
                 "null"
             ]

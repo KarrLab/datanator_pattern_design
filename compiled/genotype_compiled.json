@@ -1,10 +1,8 @@
 {
     "bsonType": "object",
-    "type": "object",
     "properties": {
         "taxon": {
             "bsonType": "object",
-            "type": "object",
             "required": [
                 "ncbi_taxonomy_id",
                 "name",
@@ -13,31 +11,29 @@
             "properties": {
                 "ncbi_taxonomy_id": {
                     "bsonType": "int",
-                    "type": "number",
                     "description": "NCBI taxonomy ID of an organism"
                 },
                 "name": {
                     "bsonType": "string",
-                    "type": "string",
                     "description": "Canonical name of an organism"
                 },
                 "canon_ancestors": {
                     "bsonType": "array",
-                    "type": "array",
                     "description": "Canonical ancestors of an organism",
                     "items": {
                         "bsonType": "object",
-                        "type": "object",
+                        "required": [
+                            "ncbi_taxonomy_id",
+                            "name"
+                        ],
                         "description": "Individual taxon information for an ancestor",
                         "properties": {
                             "ncbi_taxonomy_id": {
                                 "bsonType": "int",
-                                "type": "number",
                                 "description": "NCBI taxonomy ID of an organism"
                             },
                             "name": {
                                 "bsonType": "string",
-                                "type": "string",
                                 "description": "Canonical name of an organism"
                             }
                         }
@@ -47,24 +43,17 @@
         },
         "variant": {
             "bsonType": "object",
-            "type": "object",
             "properties": {
                 "mutant": {
-                    "bsonType": "bool",
-                    "type": "boolean"
+                    "bsonType": "bool"
                 },
                 "description": {
-                    "bsonType": "string",
-                    "type": "string"
+                    "bsonType": "string"
                 }
             }
         },
         "growthPhase": {
             "bsonType": [
-                "string",
-                "null"
-            ],
-            "type": [
                 "string",
                 "null"
             ]
@@ -73,28 +62,16 @@
             "bsonType": [
                 "string",
                 "null"
-            ],
-            "type": [
-                "string",
-                "null"
             ]
         },
         "cellType": {
             "bsonType": [
                 "string",
                 "null"
-            ],
-            "type": [
-                "string",
-                "null"
             ]
         },
         "cellLine": {
             "bsonType": [
-                "string",
-                "null"
-            ],
-            "type": [
                 "string",
                 "null"
             ]

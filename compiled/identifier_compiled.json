@@ -1,6 +1,5 @@
 {
     "bsonType": "object",
-    "type": "object",
     "required": [
         "namespace",
         "value"
@@ -8,12 +7,10 @@
     "properties": {
         "namespace": {
             "bsonType": "string",
-            "type": "string",
             "description": "name of the identifier"
         },
         "value": {
             "bsonType": "string",
-            "type": "string",
             "description": "id"
         }
     }
