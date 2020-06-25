@@ -1,11 +1,16 @@
 {
     "bsonType": "object",
     "type": "object",
+    "required": ["entity", "source", "schema_version"],
     "properties": {
         "entity": {"$ref": "entity.json"},
         "value": {"$ref": "value.json"},
         "genotype": {"$ref": "genotype.json"},
         "environment": {"$ref": "environment.json"},
-        "source": {"$ref": "identifier.json"}
+        "source": {"$ref": "identifier.json"},
+        "schema_version": {
+            "bsonType": "string",
+            "type": "string"
+        }
     }
 }

@@ -1,7 +1,7 @@
 {
     "bsonType": "object",
     "type": "object",
-    "required": ["ncbi_taxonomy_id", "name"],
+    "required": ["ncbi_taxonomy_id", "name", "canon_ancestors"],
     "properties": {
         "ncbi_taxonomy_id": {
             "bsonType": "int",
