@@ -114,5 +114,17 @@ def main():
     with open("../compiled/{}_compiled.json".format(url.split(".")[0]), "w+") as f:
         json.dump(resolved, f, indent=4)
 
+
+from pathlib import Path
+def iterate_dir():
+    pathlist = Path("./").glob('**/*.json')
+    for path in pathlist:
+        # because path is object not string
+        url = str(path)
+        schema = resolve_reference(url)
+        resolved = resolve_schema_references(schema, {})
+        with open("../compiled/{}_compiled.json".format(url.split(".")[0]), "w+") as f:
+            json.dump(resolved, f, indent=4)
+
 if __name__ == "__main__":
-    main()
+    iterate_dir()
