@@ -9,7 +9,9 @@
         "entity": {
             "bsonType": "object",
             "required": [
-                "type"
+                "type",
+                "name",
+                "identifiers"
             ],
             "properties": {
                 "type": {
@@ -82,7 +84,9 @@
                 "substrate": {
                     "bsonType": "object",
                     "required": [
-                        "type"
+                        "type",
+                        "name",
+                        "identifiers"
                     ],
                     "properties": {
                         "type": {

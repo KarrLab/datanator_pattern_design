@@ -1,5 +1,9 @@
 {
     "bsonType": "object",
+    "required": [
+        "format",
+        "value"
+    ],
     "properties": {
         "format": {
             "bsonType": [

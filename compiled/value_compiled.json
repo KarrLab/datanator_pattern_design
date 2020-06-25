@@ -7,7 +7,9 @@
         "substrate": {
             "bsonType": "object",
             "required": [
-                "type"
+                "type",
+                "name",
+                "identifiers"
             ],
             "properties": {
                 "type": {
