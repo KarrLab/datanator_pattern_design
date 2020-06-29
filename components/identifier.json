@@ -9,8 +9,8 @@
             "description": "name of the identifier"
         },
         "value": {
-            "bsonType": "string",
-            "type": "string",
+            "bsonType": ["string", "null"],
+            "type": ["string", "null"],
             "description": "id"
         }
     }
