@@ -18,8 +18,8 @@
             "type": "number"
         },
         "units": {
-            "bsonType": "string",
-            "type": "string"
+            "bsonType": ["string", "null"],
+            "type": ["string", "null"]
         }
     }
 }
