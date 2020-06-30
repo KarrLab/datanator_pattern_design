@@ -30,6 +30,10 @@
             "bsonType": "array",
             "type": "array",
             "items": {"$ref": "identifier.json"}            
+        },
+        "description": {
+            "bsonType": "string",
+            "type": "string"
         }
     }
 }
