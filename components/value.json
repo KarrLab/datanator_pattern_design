@@ -11,7 +11,8 @@
         "value": {
             "oneOf": [
                 {"bsonType": "double", "type": "number"},
-                {"bsonType": "string", "type": "string"}
+                {"bsonType": "string", "type": "string"},
+                {"bsonType": "null", "type": "null"}
             ]
         },
         "uncertainty": {
