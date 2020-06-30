@@ -11,7 +11,10 @@
         },
         "genotype": {"$ref": "genotype.json"},
         "environment": {"$ref": "environment.json"},
-        "source": {"$ref": "identifier.json"},
+        "source": {
+            "bsonType": "array",
+            "type": "array",
+            "items": {"$ref": "identifier.json"}},
         "schema_version": {
             "bsonType": "string",
             "type": "string"
