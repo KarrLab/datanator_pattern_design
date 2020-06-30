@@ -32,8 +32,8 @@
             "items": {"$ref": "identifier.json"}            
         },
         "description": {
-            "bsonType": "string",
-            "type": "string"
+            "bsonType": ["string", "null"],
+            "type": ["string", "null"]
         }
     }
 }
