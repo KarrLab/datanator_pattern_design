@@ -4,7 +4,11 @@
     "required": ["entity", "source", "schema_version"],
     "properties": {
         "entity": {"$ref": "entity.json"},
-        "value": {"$ref": "value.json"},
+        "values": {
+            "bsonType": "array",
+            "type": "array",
+            "items": {"$ref": "value.json"}
+        },
         "genotype": {"$ref": "genotype.json"},
         "environment": {"$ref": "environment.json"},
         "source": {"$ref": "identifier.json"},

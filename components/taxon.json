@@ -20,6 +20,7 @@
             "items": {
                 "bsonType": "object",
                 "type": "object",
+                "required": ["ncbi_taxonomy_id", "name"],
                 "description": "Individual taxon information for an ancestor",
                 "properties": {
                     "ncbi_taxonomy_id": {

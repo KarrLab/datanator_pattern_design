@@ -1,6 +1,7 @@
 {
     "bsonType": "object",
     "type": "object",
+    "required": ["type", "value"],
     "properties": {
         "type": {
             "bsonType": "string",
@@ -10,7 +11,8 @@
         "value": {
             "oneOf": [
                 {"bsonType": "double", "type": "number"},
-                {"bsonType": "string", "type": "string"}
+                {"bsonType": "string", "type": "string"},
+                {"bsonType": "null", "type": "null"}
             ]
         },
         "uncertainty": {
@@ -18,8 +20,8 @@
             "type": "number"
         },
         "units": {
-            "bsonType": "string",
-            "type": "string"
+            "bsonType": ["string", "null"],
+            "type": ["string", "null"]
         }
     }
 }

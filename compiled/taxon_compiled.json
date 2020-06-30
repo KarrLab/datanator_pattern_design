@@ -1,6 +1,5 @@
 {
     "bsonType": "object",
-    "type": "object",
     "required": [
         "ncbi_taxonomy_id",
         "name",
@@ -9,31 +8,29 @@
     "properties": {
         "ncbi_taxonomy_id": {
             "bsonType": "int",
-            "type": "number",
             "description": "NCBI taxonomy ID of an organism"
         },
         "name": {
             "bsonType": "string",
-            "type": "string",
             "description": "Canonical name of an organism"
         },
         "canon_ancestors": {
             "bsonType": "array",
-            "type": "array",
             "description": "Canonical ancestors of an organism",
             "items": {
                 "bsonType": "object",
-                "type": "object",
+                "required": [
+                    "ncbi_taxonomy_id",
+                    "name"
+                ],
                 "description": "Individual taxon information for an ancestor",
                 "properties": {
                     "ncbi_taxonomy_id": {
                         "bsonType": "int",
-                        "type": "number",
                         "description": "NCBI taxonomy ID of an organism"
                     },
                     "name": {
                         "bsonType": "string",
-                        "type": "string",
                         "description": "Canonical name of an organism"
                     }
                 }

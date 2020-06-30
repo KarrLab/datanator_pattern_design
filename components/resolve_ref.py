@@ -63,6 +63,9 @@ def _resolve_schema_references(schema, loaded_schemas, object_path):
                 res = loaded_schemas[reference_path]
                 schema.update(res)
 
+    if SchemaKey._type in schema: # remove "type" in compiled version
+        schema.pop(SchemaKey._type)
+
     if SchemaKey.properties in schema:
         for k, val in schema[SchemaKey.properties].items():
             current_path = object_path + '/properties/'+k
@@ -104,11 +107,12 @@ class SchemaKey:
     properties = "properties"
     definitions = 'definitions'
     pattern_properties = "patternProperties"
+    _type = "type"
     sub_patterns = ['anyOf', 'oneOf', 'allOf']
 
 
 def main():
-    url = "observation.json"
+    url = "taxon.json"
     schema = resolve_reference(url)
     resolved = resolve_schema_references(schema, {})
     with open("../compiled/{}_compiled.json".format(url.split(".")[0]), "w+") as f:

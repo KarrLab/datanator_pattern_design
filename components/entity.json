@@ -1,7 +1,7 @@
 {
     "bsonType": "object",
     "type": "object",
-    "required": ["type"],
+    "required": ["type", "name", "identifiers"],
     "properties": {
         "type": {
             "bsonType": "string",
