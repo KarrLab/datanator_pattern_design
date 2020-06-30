@@ -39,7 +39,10 @@
                         "description": "name of the identifier"
                     },
                     "value": {
-                        "bsonType": "string",
+                        "bsonType": [
+                            "string",
+                            "null"
+                        ],
                         "description": "id"
                     }
                 }
@@ -59,11 +62,20 @@
                         "description": "name of the identifier"
                     },
                     "value": {
-                        "bsonType": "string",
+                        "bsonType": [
+                            "string",
+                            "null"
+                        ],
                         "description": "id"
                     }
                 }
             }
+        },
+        "description": {
+            "bsonType": [
+                "string",
+                "null"
+            ]
         }
     }
 }

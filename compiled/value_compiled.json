@@ -1,5 +1,9 @@
 {
     "bsonType": "object",
+    "required": [
+        "type",
+        "value"
+    ],
     "properties": {
         "type": {
             "bsonType": "string"
@@ -45,7 +49,10 @@
                                 "description": "name of the identifier"
                             },
                             "value": {
-                                "bsonType": "string",
+                                "bsonType": [
+                                    "string",
+                                    "null"
+                                ],
                                 "description": "id"
                             }
                         }
@@ -65,11 +72,20 @@
                                 "description": "name of the identifier"
                             },
                             "value": {
-                                "bsonType": "string",
+                                "bsonType": [
+                                    "string",
+                                    "null"
+                                ],
                                 "description": "id"
                             }
                         }
                     }
+                },
+                "description": {
+                    "bsonType": [
+                        "string",
+                        "null"
+                    ]
                 }
             }
         },
@@ -80,6 +96,9 @@
                 },
                 {
                     "bsonType": "string"
+                },
+                {
+                    "bsonType": "null"
                 }
             ]
         },
@@ -87,7 +106,10 @@
             "bsonType": "double"
         },
         "units": {
-            "bsonType": "string"
+            "bsonType": [
+                "string",
+                "null"
+            ]
         }
     }
 }

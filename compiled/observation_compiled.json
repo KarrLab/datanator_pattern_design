@@ -47,7 +47,10 @@
                                 "description": "name of the identifier"
                             },
                             "value": {
-                                "bsonType": "string",
+                                "bsonType": [
+                                    "string",
+                                    "null"
+                                ],
                                 "description": "id"
                             }
                         }
@@ -67,104 +70,138 @@
                                 "description": "name of the identifier"
                             },
                             "value": {
-                                "bsonType": "string",
+                                "bsonType": [
+                                    "string",
+                                    "null"
+                                ],
                                 "description": "id"
                             }
                         }
                     }
+                },
+                "description": {
+                    "bsonType": [
+                        "string",
+                        "null"
+                    ]
                 }
             }
         },
-        "value": {
-            "bsonType": "object",
-            "properties": {
-                "type": {
-                    "bsonType": "string"
-                },
-                "substrate": {
-                    "bsonType": "object",
-                    "required": [
-                        "type",
-                        "name",
-                        "identifiers"
-                    ],
-                    "properties": {
-                        "type": {
-                            "bsonType": "string",
-                            "enum": [
-                                "metabolite",
-                                "protein",
-                                "reaction",
-                                "RNA"
-                            ]
-                        },
-                        "name": {
-                            "bsonType": "string",
-                            "description": "Name of protein, RNA, etc."
-                        },
-                        "synonyms": {
-                            "bsonType": "array",
-                            "items": {
+        "values": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "required": [
+                    "type",
+                    "value"
+                ],
+                "properties": {
+                    "type": {
+                        "bsonType": "string"
+                    },
+                    "substrate": {
+                        "bsonType": "object",
+                        "required": [
+                            "type",
+                            "name",
+                            "identifiers"
+                        ],
+                        "properties": {
+                            "type": {
+                                "bsonType": "string",
+                                "enum": [
+                                    "metabolite",
+                                    "protein",
+                                    "reaction",
+                                    "RNA"
+                                ]
+                            },
+                            "name": {
+                                "bsonType": "string",
+                                "description": "Name of protein, RNA, etc."
+                            },
+                            "synonyms": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "string"
+                                }
+                            },
+                            "identifiers": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "required": [
+                                        "namespace",
+                                        "value"
+                                    ],
+                                    "properties": {
+                                        "namespace": {
+                                            "bsonType": "string",
+                                            "description": "name of the identifier"
+                                        },
+                                        "value": {
+                                            "bsonType": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "description": "id"
+                                        }
+                                    }
+                                }
+                            },
+                            "related": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "required": [
+                                        "namespace",
+                                        "value"
+                                    ],
+                                    "properties": {
+                                        "namespace": {
+                                            "bsonType": "string",
+                                            "description": "name of the identifier"
+                                        },
+                                        "value": {
+                                            "bsonType": [
+                                                "string",
+                                                "null"
+                                            ],
+                                            "description": "id"
+                                        }
+                                    }
+                                }
+                            },
+                            "description": {
+                                "bsonType": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    },
+                    "value": {
+                        "oneOf": [
+                            {
+                                "bsonType": "double"
+                            },
+                            {
                                 "bsonType": "string"
+                            },
+                            {
+                                "bsonType": "null"
                             }
-                        },
-                        "identifiers": {
-                            "bsonType": "array",
-                            "items": {
-                                "bsonType": "object",
-                                "required": [
-                                    "namespace",
-                                    "value"
-                                ],
-                                "properties": {
-                                    "namespace": {
-                                        "bsonType": "string",
-                                        "description": "name of the identifier"
-                                    },
-                                    "value": {
-                                        "bsonType": "string",
-                                        "description": "id"
-                                    }
-                                }
-                            }
-                        },
-                        "related": {
-                            "bsonType": "array",
-                            "items": {
-                                "bsonType": "object",
-                                "required": [
-                                    "namespace",
-                                    "value"
-                                ],
-                                "properties": {
-                                    "namespace": {
-                                        "bsonType": "string",
-                                        "description": "name of the identifier"
-                                    },
-                                    "value": {
-                                        "bsonType": "string",
-                                        "description": "id"
-                                    }
-                                }
-                            }
-                        }
+                        ]
+                    },
+                    "uncertainty": {
+                        "bsonType": "double"
+                    },
+                    "units": {
+                        "bsonType": [
+                            "string",
+                            "null"
+                        ]
                     }
-                },
-                "value": {
-                    "oneOf": [
-                        {
-                            "bsonType": "double"
-                        },
-                        {
-                            "bsonType": "string"
-                        }
-                    ]
-                },
-                "uncertainty": {
-                    "bsonType": "double"
-                },
-                "units": {
-                    "bsonType": "string"
                 }
             }
         },
@@ -266,19 +303,25 @@
             }
         },
         "source": {
-            "bsonType": "object",
-            "required": [
-                "namespace",
-                "value"
-            ],
-            "properties": {
-                "namespace": {
-                    "bsonType": "string",
-                    "description": "name of the identifier"
-                },
-                "value": {
-                    "bsonType": "string",
-                    "description": "id"
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "required": [
+                    "namespace",
+                    "value"
+                ],
+                "properties": {
+                    "namespace": {
+                        "bsonType": "string",
+                        "description": "name of the identifier"
+                    },
+                    "value": {
+                        "bsonType": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "id"
+                    }
                 }
             }
         },
