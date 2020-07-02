@@ -3,20 +3,20 @@
     "type": "object",
     "properties": {
         "condition": {
-            "bsonType": "string",
-            "type": "string"
+            "bsonType": ["string", "null"],
+            "type": ["string", "null"]
         },
         "media": {
-            "bsonType": "string",
-            "type": "string"
+            "bsonType": ["string", "null"],
+            "type": ["string", "null"]
         },
         "temperature": {
-            "bsonType": "long",
-            "type": "number"
+            "bsonType": ["long", "null"],
+            "type": ["number", "null"]
         },
         "pH": {
-            "bsonType": "long",
-            "type": "number"
+            "bsonType": ["long", "null"],
+            "type": ["number", "null"]
         }
     }
 }
