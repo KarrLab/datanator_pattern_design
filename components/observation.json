@@ -1,7 +1,7 @@
 {
     "bsonType": "object",
     "type": "object",
-    "required": ["entity", "source", "schema_version"],
+    "required": ["entity", "source", "schema_version", "identifier"],
     "properties": {
         "entity": {"$ref": "entity.json"},
         "values": {
@@ -15,6 +15,7 @@
             "bsonType": "array",
             "type": "array",
             "items": {"$ref": "identifier.json"}},
+        "identifier": {"$ref": "identifier.json"},
         "schema_version": {
             "bsonType": "string",
             "type": "string"
