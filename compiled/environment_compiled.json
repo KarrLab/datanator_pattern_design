@@ -2,16 +2,28 @@
     "bsonType": "object",
     "properties": {
         "condition": {
-            "bsonType": "string"
+            "bsonType": [
+                "string",
+                "null"
+            ]
         },
         "media": {
-            "bsonType": "string"
+            "bsonType": [
+                "string",
+                "null"
+            ]
         },
         "temperature": {
-            "bsonType": "long"
+            "bsonType": [
+                "long",
+                "null"
+            ]
         },
         "pH": {
-            "bsonType": "long"
+            "bsonType": [
+                "long",
+                "null"
+            ]
         }
     }
 }

@@ -3,7 +3,8 @@
     "required": [
         "entity",
         "source",
-        "schema_version"
+        "schema_version",
+        "identifier"
     ],
     "properties": {
         "entity": {
@@ -289,16 +290,28 @@
             "bsonType": "object",
             "properties": {
                 "condition": {
-                    "bsonType": "string"
+                    "bsonType": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "media": {
-                    "bsonType": "string"
+                    "bsonType": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "temperature": {
-                    "bsonType": "long"
+                    "bsonType": [
+                        "long",
+                        "null"
+                    ]
                 },
                 "pH": {
-                    "bsonType": "long"
+                    "bsonType": [
+                        "long",
+                        "null"
+                    ]
                 }
             }
         },
@@ -322,6 +335,26 @@
                         ],
                         "description": "id"
                     }
+                }
+            }
+        },
+        "identifier": {
+            "bsonType": "object",
+            "required": [
+                "namespace",
+                "value"
+            ],
+            "properties": {
+                "namespace": {
+                    "bsonType": "string",
+                    "description": "name of the identifier"
+                },
+                "value": {
+                    "bsonType": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "id"
                 }
             }
         },
